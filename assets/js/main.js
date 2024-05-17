@@ -332,7 +332,7 @@ function renderPage() {
 
   let flexColumnAlignContent = document.createElement("div");
   flexColumnAlignContent.className =
-    "d-flex flex-column align-content-center justify-content-center mt-5";
+    "d-flex flex-column align-content-center justify-content-start mt-4";
   dFlexJustifyContent.appendChild(flexColumnAlignContent);
 
   let dateContentGap2 = document.createElement("div");
@@ -380,7 +380,7 @@ function renderPage() {
   dateContentPy2.appendChild(holidayName);
 
   let flexColumnCalendar = document.createElement("div");
-  flexColumnCalendar.className = "d-flex flex-column calendar-area mt-5";
+  flexColumnCalendar.className = "d-flex flex-column calendar-area mt-5 me-5";
   dFlexJustifyContent.appendChild(flexColumnCalendar);
 
   let rowCols7 = document.createElement("div");
@@ -418,7 +418,8 @@ function renderPage() {
   flexColumnCalendar.appendChild(rowCols7Days);
 
   let holidaysContainer = document.createElement("div");
-  holidaysContainer.className = "d-flex holidays-container ms-3 py-2";
+  holidaysContainer.className =
+    "d-flex position-absolute holidays-container bottom-0 end-0 me-5 mb-3";
   holidaysContainer.id = "holiday-list";
   bottomContainer.appendChild(holidaysContainer);
 
